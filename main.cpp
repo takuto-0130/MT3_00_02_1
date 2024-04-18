@@ -127,7 +127,6 @@ Matrix4x4 Transpose(const Matrix4x4& matrix) {
 	Matrix4x4 result;
 	for (int i = 0; i < 4; i++) {
 		for (int j = 0; j < 4; j++) {
-			result.m[i][j] = matrix.m[i][j];
 			result.m[i][j] = matrix.m[j][i];
 		}
 	}
